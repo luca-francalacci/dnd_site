@@ -1,5 +1,5 @@
 # Dungeons & Dragons
-Benvenuti in questo repository! uesto sito web è stato realizzato per l'esame di Progettazione e Programmazione Web (Unipi).
+Benvenuti in questo repository! Questo sito web è stato realizzato per l'esame di Progettazione e Programmazione Web (Unipi).
 L’idea di realizzarlo con questo tema nasce dalla mia passione verso questo gioco di ruolo, iniziata fin da quando avevo solamente quattordici anni.
 I testi traggono spunto dai manuali di Dungens & Dragons con una personale rielaborazione.
 I disegni sono tratti da alcuni viedeo YouTube, creati da JoCat il quale tratta proprio di D&D, applicando alcune modifiche grazie al programma vettoriale Adobe Illustrator©.
