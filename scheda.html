@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<title>Scheda</title>
+		<link rel="icon" href="img/icona.ico">
+		<meta charset="UTF-8">
+		<meta name="author" content="Luca Francalacci" />
+		<link rel="stylesheet" href="scheda.css" />
+		
+		<script src="scheda.js"></script>
+		<script src="bancascheda.js"></script>
+	</head>
+	
+	<body> 	
+		<nav>
+			<div id = "logo"><a href="index.html"><img src = "img/DnD.png" alt = ""></a></div>
+			
+				<ul class="menu">
+					<li><a href="regole.html">Regole base</a></li>
+					<li><a href="scheda.html">Come fare la scheda</a></li>
+					<li><a href="test.html">Che personaggio sei?</a></li>
+					<li><a href="about.html">Chi sono</a></li>
+				</ul>
+			
+		</nav>
+	
+		<div class = "container">
+			
+			<br/>
+			<h1>Come si fa la scheda del personaggio</h1><br/>
+			<p class = "subtitle">
+				Non sai come fare la scheda del tuo personaggio e non sai a chi chiedere? Nessun problema ti aiutiamo noi!
+			</p>
+			
+			<div class = "box">
+					<div class = "changing">
+						<div class = "align">
+							<strong>Allineamento</strong> <select id = "align">
+							<option value = "Nessuno" selected>Seleziona un allineamento</option>
+							<option value = "Legale Buono" >Legale Buono</option>
+							<option value = "Neutrale Buono" >Neutrale Buono</option>
+							<option value = "Caotico Buono" >Caotico Buono</option>
+							
+							<option value = "Legale Neutrale" >Legale Neutrale</option>
+							<option value = "Neutrale Puro" >Neutrale Puro</option>
+							<option value = "Caotico Neutrale" >Caotico Neutrale</option>
+							
+							<option value = "Legale Malvagio" >Legale Malvagio</option>
+							<option value = "Neutrale Malvagio" >Neutrale Malvagio</option>
+							<option value = "Caotico Malvagio" >Caotico Malvagio</option>
+							</select>
+						</div>
+						<div>
+							L'allineamento descrive in maniera generale il comportamento del personaggio utilizzando due assi:
+							<ul id = "alignList">
+							<li>l’ordine e la società (legale, caotico o neutrale);</li>
+							<li>la moralità (buono, malvagio o neutrale).</li>
+							</ul>
+						</div>
+					</div>
+					<div class = "changing">
+						<div class = "column grand">
+							<div class = "class">
+								<div><strong>Classe </strong></div>
+								<select id = "class">
+									<option value = "Nessuna" selected>Seleziona una classe</option>
+									<option value = "Bardo" >Bardo</option>
+									<option value = "Druido">Druido</option>
+									<option value = "Guerriero">Guerriero</option>
+									<option value = "Mago">Mago</option>
+									<option value = "Ladro">Ladro</option>
+								</select>
+							</div>
+							La classe definisce le capacità, i punti forti ed i punti deboli del tuo personaggio.
+							
+						</div>
+						<div class = "img">
+							<img src = "img/class/null.png" id = "imgClass" alt = "">
+						</div>
+						<div class = "column">
+							<span id="explanationClass">Nessuna</span>
+						</div>
+					</div>
+					<div class = "changing">
+						<div class = "column grand">
+							<div class = "class">
+								<strong>Razza</strong> <select id = "race">
+							<option value = "Nessuna" selected>Seleziona una razza</option>
+							<option value = "Elfo" >Elfo</option>
+							<option value = "Halfling">Halfling</option>
+							<option value = "Nano">Nano</option>
+							<option value = "Umano">Umano</option>
+						</select>
+							</div>
+							La razza definisce le origini ed alcune caratteristiche comuni a tutti gli individui appartenenti a tale razza.
+						</div>
+						<div class = "img">
+							<img src = "img/race/null.png" alt = "" id = "imgRace">
+						</div>
+						<div class = "column">
+							<span id="explanationRace">Nessuna</span>
+						</div>
+					</div>
+					
+					<div class = "changing">
+						<div class = "column grand">
+							<div class = "class">
+							<strong>Armatura</strong> <select id = "armor">
+							<option value = "Nessuna armatura" selected>Nessuna armatura</option>
+							<option value = "Cuoio" >Cuoio</option>
+							<option value = "Scaglie" >Scaglie</option>
+							<option value = "Cotta di Maglia" >Cotta di Maglia</option>
+							<option value = "Completa a Piastre" >Completa a Piastre</option>
+							</select>
+							</div>
+							L'armatura influisce quanto un personaggio è protetto durante un combattimento.
+						</div>
+						<div class = "img"> 
+							<img src = "img/armor/null.png" alt = "" id = "imgArmor">
+						</div>
+						<div class = "column">
+							<span id="explanationArmor">Nessuna</span>	
+						</div>
+					</div>
+					
+					
+					<div class = "changing">
+						<div class = "column grand">
+							<div class = "class">
+							<strong>Arma</strong> <select id = "weapon">
+								<option value = "Pugno" selected>Nessuna</option>
+								<option value = "Bastone Ferrato" >Bastone Ferrato</option>
+								<option value = "Pugnale" >Pugnale</option>
+								<option value = "Ascia" >Ascia</option>
+								<option value = "Spada" >Spada</option>
+								<option value = "Arco" >Arco</option>
+							</select>
+							</div>
+							L'arma influisce quanto un personaggio è forte durante un combattimento.
+						</div>
+						<div class = "img"> 
+							<img src = "img/weapon/fist.png" alt = "" id = "imgWeapon">
+						</div>
+						<div class = "column">
+							
+							<span id="explanationWeapon">Pugni</span>	
+						</div>
+					</div>
+					
+					<div class = "changing">
+						<div class = "column grand ">
+							<div class = "row boxDice">
+								<img src = "img/dadi/one.png" alt = "" id = "diceOne">
+								<img src = "img/dadi/one.png" alt = "" id = "diceTwo">
+								<img src = "img/dadi/one.png" alt = "" id = "diceThree">
+								<img src = "img/dadi/one.png" alt = "" id = "diceFour">
+							</div>
+							<input type = "button" value="Lancia i dadi!" id="roll" />
+							<strong>Tiri effettuati:</strong> <span id = "resultDice"></span>
+							<strong>Tiri validi:</strong> <span id = "validRoll"></span>
+						</div>
+						<div class = "column grand" id = "preRollMess">							
+							Per ogni lancio effettuato, verranno scelti i 3 dadi più alti!<br/>
+							Inoltre i 2 valori più bassi saranno eliminati.<br>
+							I valori saranno assegnati in base alla classe selezionata.
+						</div>
+					</div>
+					<input type = "button" value="Conferma" id="confirmation" />
+					
+					
+					<div class = "row">
+						<div class = "left">
+							<div class = "row">
+								<div>Classe: </div><span id ="classPg"></span>
+							</div>
+							<div class = "row">
+								<div>Razza: </div><span id ="racePg"></span>
+							</div>
+							<div class = "row">
+								<div>Allineamento: </div><span id ="alignPg"></span>
+							</div>
+							<div class = "row">
+								<div>Vita: </div><span id ="hpPg"></span>
+							</div>
+							<div class = "row">
+								<div>Classe Armatura: </div><span id ="caPg"></span>
+							</div>
+							<div class = "row">
+								<div>Arma: </div><span id="weaponPg"></span>
+								</div>
+						</div>
+						<div class = "right">
+							<div class = "row">
+								<div>Forza: </div> <span id="strength"></span>
+							</div>
+							<div class = "row">
+								<div>Destrezza: </div> <span id="dexterity"></span>
+							</div>
+							<div class = "row">
+								<div>Costituzione: </div> <span id="constitution"></span>
+							</div>
+							<div class = "row">
+								<div>Intelligenza: </div> <span id="intelligence"></span>
+							</div>
+							<div class = "row">
+								<div>Saggezza: </div> <span id="wisdon"></span>
+							</div>
+							<div class = "row">
+								<div>Carisma: </div> <span id="charisma"></span>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>	
+			
+		
+		<footer>
+			
+		</footer>
+	</body>
+</html>
